@@ -1,0 +1,17 @@
+
+-release mode -
+				PC(32) 		Android
+Blend + Blur	6			35-40
+Blur			5			28-35
+
+
+
+(Release)
+			PC(32)			Android 
+Screenshot 	1				6	**
+Copy		2 				13  **
+blend		0				6	*
+blur		4				12
+		
+
+

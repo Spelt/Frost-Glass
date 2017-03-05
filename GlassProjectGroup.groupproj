@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{84FF71E8-9560-4BFB-9645-4BA9964ECE68}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="FrostGlassPackage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Demo multi device\FrostGlassDemo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FrostGlassPackage">
+        <MSBuild Projects="FrostGlassPackage.dproj"/>
+    </Target>
+    <Target Name="FrostGlassPackage:Clean">
+        <MSBuild Projects="FrostGlassPackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FrostGlassPackage:Make">
+        <MSBuild Projects="FrostGlassPackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FrostGlassDemo">
+        <MSBuild Projects="Demo multi device\FrostGlassDemo.dproj"/>
+    </Target>
+    <Target Name="FrostGlassDemo:Clean">
+        <MSBuild Projects="Demo multi device\FrostGlassDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FrostGlassDemo:Make">
+        <MSBuild Projects="Demo multi device\FrostGlassDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FrostGlassPackage;FrostGlassDemo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FrostGlassPackage:Clean;FrostGlassDemo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FrostGlassPackage:Make;FrostGlassDemo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
