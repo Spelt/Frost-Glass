@@ -10,6 +10,9 @@ Performance is utterly important here, it was/is a challenge to get this compone
 
 In some cases it is wise to use the build-in cache feature and somtimes it's not (like with changing backgrounds or with slide pop-ins because you want continue updates). Anyway you can test for yourself via the included test project. Just resize the form at runtime to see the speed result in ms in the lisbox via the onTickEvent. I added a build-in TStopwatch to measure performance.
 
+Example:
+![Frost-Glass Example](https://github.com/Spelt/Frost-Glass/blob/Master/Screenshot.png )
+
 
 The inspiration for this component are the IOS 8/10 popup sound controls and IOS Control Centre (bottom slide up). Code inspiration comes from this stack overflow post: http://stackoverflow.com/questions/23898849/ios7-blurred-overlay-in-delphi-xe6
 
