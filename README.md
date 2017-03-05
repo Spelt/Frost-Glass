@@ -1,30 +1,22 @@
 # Frost Glass Control
 
-- STILL IN BETA -
+A little pet project ;-) 
 
-A little pet project ;-) It's a Firemonkey component which is frost glass like component just like the IOS 8/10 popup sound control and IOS Control Centre (bottom slide up).
+It's a frost glass (blur+background coloring) Firemonkey component for use with all Firemonkey platforms. This component is just like the IOS 8/10 popup sound control and IOS Control Centre (bottom slide up) but with a bonus: you can give it a nice background color tint.
 
-which is able to blur and color tinting. 
-It is a decendent of the very versatile TRectangle and thus also support borders and round corners.
 
 ### About the project
-Performance is utterly important here, it was/is a challenge to get this component as smooth as possible.  If you think you can shave off more milli seconds? Let me know!
+Performance is utterly important here, it was/is a challenge to get this component as smooth as possible.  If you think you can shave off some milli seconds? Let me know!
 
-In some cases it is wise to use the build in cache feature and somtimes it's not (changing backgrounds or with slide pop ins you want continue updates). Anyway you can test for yourself via the included test project. Just resize the form at runtime to see the speed result in ms in the lisbox via the onTickEvent. I added a build-in TStopwatch to measure performance.
-
-
-The inspiration for this component are the IOS 8/10 popup sound controls and IOS Control Centre (bottom slide up). Code inspiration is from: http://stackoverflow.com/questions/23898849/ios7-blurred-overlay-in-delphi-xe6
+In some cases it is wise to use the build-in cache feature and somtimes it's not (like with changing backgrounds or with slide pop-ins because you want continue updates). Anyway you can test for yourself via the included test project. Just resize the form at runtime to see the speed result in ms in the lisbox via the onTickEvent. I added a build-in TStopwatch to measure performance.
 
 
-###Licence
-Frost Glass is released under the Apache 2.0 license.  A copy of the Apache 2.0 license can be found here: http://www.apache.org/licenses/LICENSE-2.0
-
+The inspiration for this component are the IOS 8/10 popup sound controls and IOS Control Centre (bottom slide up). Code inspiration comes from this stack overflow post: http://stackoverflow.com/questions/23898849/ios7-blurred-overlay-in-delphi-xe6
 
 
 ###Changes
-- vBeta 1 Date: 2017/03/05 
+- v1 Date: 2017/03/05 
 	- Initial upload to github
-
 
 
 ###Features
@@ -40,4 +32,8 @@ Properties available
 Important inherited properties of TRectangle which will make it look more great.
 - Border functionality
 - Corner functionality
+
+
+###Licence
+Frost Glass is released under the Apache 2.0 license.  A copy of the Apache 2.0 license can be found here: http://www.apache.org/licenses/LICENSE-2.0
 
