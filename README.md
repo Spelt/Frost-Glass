@@ -1,8 +1,8 @@
-#Frost Glass Control
+#Delphi Frost Glass Control
 
 A little pet project ;-) 
 
-It's a frost glass (blur+background coloring) Firemonkey component for use with all Firemonkey platforms. This component is just like the IOS 8/10 popup sound control and IOS Control Centre (bottom slide up) but with a bonus: you can give it a nice background color tint.
+It's a frost glass (blur+background coloring) Delphi Firemonkey component for use with all Firemonkey platforms. This component is just like the IOS 8/10 popup sound control and IOS Control Centre (bottom slide up) but with a bonus: you can give it a nice background color tint. I tested it on Delphi Berlin 10.1 update 2.
 
 
 ### About the project
